@@ -1,0 +1,66 @@
+.jds-input-text {
+  display: inline-block;
+  font-size: 1em;
+  font-family: inherit;
+
+  &__label {
+    display: block;
+    font-size: inherit;
+    margin-bottom: 0.25em;
+  }
+
+  &__input-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    border: 1px solid #757575;
+    border-radius: 6px;
+    background-color: #fafafa;
+    overflow: hidden;
+  }
+
+  &__prefix-text,
+  &__suffix-text {
+    background-color: #eee;
+  }
+
+  &__prefix-text,
+  &__prefix-icon,
+  &__suffix-text,
+  &__suffix-icon {
+    flex: 0 0 auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: #aaa;
+    padding: 0.6875em 0.5em;
+  }
+
+  input {
+    padding: 0.6875em 0.5em;
+
+  }
+
+  input {
+    display: inline-block;
+    flex: 1 1 auto;
+    background-color: transparent;
+    font-size: inherit;
+
+    &,
+    &:active,
+    &:focus,
+    &:hover {
+      border: none;
+      outline: none;
+      box-shadow: none;
+    }
+
+    &::placeholder {
+      color: #757575;
+    }
+  }
+}
